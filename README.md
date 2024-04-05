@@ -1,0 +1,28 @@
+# Lucide Lab [WIP]
+
+Lucide lab is a project with icons that are nicely designed but have unknown use cases.
+These icons are release in this package to "explore" the use cases of these icons.
+
+Eventually these icons can be merged into the main Lucide project, and will be available in all official packages.
+
+## Installation
+
+```sh
+npm install @lucide/lab
+```
+
+```sh
+yarn add @lucide/lab
+```
+
+```sh
+pnpm install @lucide/lab
+```
+
+## Usage
+
+See Lab package [readme](./packages/lab/README.md)
+
+## License
+
+ISC
