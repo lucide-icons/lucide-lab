@@ -2,9 +2,9 @@ import plugins from '@lucide/rollup-plugins';
 import dts from 'rollup-plugin-dts';
 import pkg from './package.json' assert { type: 'json' };
 
-const outputFileName = pkg.name;
+const outputFileName = 'lucide-lab';
 const outputDir = 'dist';
-const inputs = ['src/lucide-static.ts'];
+const inputs = ['src/lucide-lab.ts'];
 const bundles = [
   {
     format: 'cjs',

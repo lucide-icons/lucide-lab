@@ -5,7 +5,11 @@ export default async function copyIcons(parsedSvgs, packageDir, license) {
   const iconsDirectory = `${packageDir}/icons`;
 
   if (existsSync(iconsDirectory)) {
-    unlinkSync(iconsDirectory);
+    try {
+      unlinkSync(iconsDirectory);
+    } catch (error) {
+
+    }
   }
 
   if (!existsSync(iconsDirectory)) {

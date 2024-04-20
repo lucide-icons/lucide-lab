@@ -14,16 +14,22 @@ importers:
     devDependencies:
       '@types/bun':
         specifier: latest
-        version: 1.0.12
+        version: 1.1.0
 
   packages/lab:
     devDependencies:
       '@lucide/build-icons':
         specifier: 1.0.0
         version: 1.0.0
+      '@lucide/helpers':
+        specifier: 1.0.0
+        version: 1.0.0
       '@lucide/rollup-plugins':
         specifier: 1.0.0
         version: 1.0.0
+      minimist:
+        specifier: ^1.2.8
+        version: 1.2.8
       prettier:
         specifier: ^2.3.2
         version: 2.8.8
@@ -302,6 +308,10 @@ packages:
       svgson: 5.3.1
     dev: true
 
+  /@lucide/helpers@1.0.0:
+    resolution: {integrity: sha512-9dfxrgLLaoCfr3R/eh6wwlUcY+ZPdEv6SDwFMUhYoO6HhGL8yN8hb5ZwI/OfzbK9mdJpa+jYfwP4nF4ZlZwZLA==}
+    dev: true
+
   /@lucide/rollup-plugins@1.0.0:
     resolution: {integrity: sha512-mqeo9QlWte26O8lctsoWJHXvHObdAzcj5Y1Jaom3YVVt3F3RioPG49SCvmWJ3rBXhoxLL8UKlpmfslU7b+oxLQ==}
     dependencies:
@@ -489,10 +499,10 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: true
 
-  /@types/bun@1.0.12:
-    resolution: {integrity: sha512-qPb5FcygbpSS1NDBjWyQCWeI9kKXwSYSR1Enu7yb+gMXgFwGMhlyOvgV/7FGrdvAjlSXWRY6IDepos7k8WzAtQ==}
+  /@types/bun@1.1.0:
+    resolution: {integrity: sha512-QGK0yU4jh0OK1A7DyhPkQuKjHQCC5jSJa3dpWIEhHv/rPfb6zLfdArc4/uUUZBMTcjilsafRXnPWO+1owb572Q==}
     dependencies:
-      bun-types: 1.0.36
+      bun-types: 1.1.0
     dev: true
 
   /@types/estree@1.0.5:
@@ -568,8 +578,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /bun-types@1.0.36:
-    resolution: {integrity: sha512-gaIb1SyhB0JZfIEg73/kSFhqolUqJXC68peguhXGwqr27HuvI8nkD0LTIHp/1DY4cNadfXHYgYrZIWX7oEoXlg==}
+  /bun-types@1.1.0:
+    resolution: {integrity: sha512-GhMDD7TosdJzQPGUOcQD5PZshvXVxDfwGAZs2dq+eSaPsRn3iUCzvpFlsg7Q51bXVzLAUs+FWHlnmpgZ5UggIg==}
     dependencies:
       '@types/node': 20.11.30
       '@types/ws': 8.5.10
@@ -1037,6 +1047,7 @@ packages:
 
   /picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
+    requiresBuild: true
     dev: true
 
   /picomatch@2.3.1:
