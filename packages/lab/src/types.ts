@@ -1,3 +1,12 @@
+type IconNodeElement =
+  'circle' |
+  'ellipse' |
+  'line' |
+  'path' |
+  'polygon' |
+  'polyline' |
+  'rect'
+
 export type SVGProps = Record<string, string | number>;
-export type IconNodeChild = readonly [tag: string, attrs: SVGProps];
-export type IconNode = readonly IconNodeChild[];
+export type IconNodeChild = [elementName: IconNodeElement, attrs: Record<string, string>];
+export type IconNode =  IconNodeChild[];
