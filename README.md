@@ -1,9 +1,9 @@
 # Lucide Lab [WIP]
 
-Lucide lab is a project with icons that are nicely designed but have unknown use cases.
-These icons are release in this package to "explore" the use cases of these icons.
+Lucide Lab is a project with icons that are nicely designed but have unknown use cases.
+These icons are released in this package to "explore" the use cases of these icons.
 
-Eventually these icons can be merged into the main Lucide project, and will be available in all official packages.
+Eventually, if there are valid use cases these icons can be merged into the main Lucide project and will be available in all official packages.
 
 ## Installation
 
