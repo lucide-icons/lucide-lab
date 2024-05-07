@@ -7,7 +7,9 @@
     "compare": "bun ./scripts/compareIcons.ts"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@lucide/build-icons": "1.1.0",
+    "@lucide/helpers": "1.0.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

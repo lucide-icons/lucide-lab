@@ -34,8 +34,6 @@
     "version": "pnpm version --git-tag-version=false"
   },
   "devDependencies": {
-    "@lucide/build-icons": "1.0.0",
-    "@lucide/helpers": "1.0.0",
     "@lucide/rollup-plugins": "1.0.0",
     "minimist": "^1.2.8",
     "prettier": "^2.3.2",
