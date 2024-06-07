@@ -1,12 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "build": "pnpm writeIconNodes && nitro build",
-    "dev": "nitro dev",
+    "build": "pnpm run /^prebuild:.*/ && && nitro build",
+    "dev": "pnpm run /^prebuild:.*/ && nitro dev",
     "prepare": "nitro prepare",
     "preview": "node .output/server/index.mjs",
-    "writeIconNodes": "bun ./scripts/writeIconNodes.ts",
-    "writeIconMetaIndex": "bun ./scripts/writeIconMetaIndex.ts"
+    "prebuild:writeIconNodes": "bun ./scripts/writeIconNodes.ts",
+    "prebuild:writeIconMetaIndex": "bun ./scripts/writeIconMetaIndex.ts"
   },
   "devDependencies": {
     "nitropack": "latest"
