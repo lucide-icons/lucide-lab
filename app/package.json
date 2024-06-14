@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "pnpm run /^prebuild:.*/ && && nitro build",
+    "build": "pnpm run /^prebuild:.*/ && nitro build",
     "dev": "pnpm run /^prebuild:.*/ && nitro dev",
     "prepare": "nitro prepare",
     "preview": "node .output/server/index.mjs",
