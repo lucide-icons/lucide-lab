@@ -14,6 +14,9 @@ yarn add @lucide/lab
 pnpm install @lucide/lab
 ```
 
+> [!NOTE]
+> Requires Lucide core package to be installed in your project. For more info visit [lucide installation guide](https://lucide.dev/guide/installation).
+
 ## Usage
 
 ### React
@@ -36,7 +39,7 @@ function App() {
 ```vue
 <script setup>
 import { burger } from '@lucide/lab';
-import {  } from 'lucide-vue-next';
+import { Icon } from 'lucide-vue-next';
 </script>
 
 <template>
@@ -44,6 +47,23 @@ import {  } from 'lucide-vue-next';
     <Icon :iconNode="burger" />
   </div>
 </template>
+```
+
+### Angular
+
+```angular
+// app.module.ts
+import { LucideAngularModule } from 'lucide-angular';
+import { atSignCircle } from '@lucide/lab';
+
+@NgModule({
+  imports: [
+      LucideAngularModule.pick({ AtSignCircle: atSignCircle })
+  ],
+})
+
+// app.component.html
+<lucide-icon name = "AtSignCircle" > </lucide-icon>
 ```
 
 ### Svelte
