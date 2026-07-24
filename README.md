@@ -1,4 +1,7 @@
-# Lucide Lab [WIP]
+# Lucide Lab
+
+> [!WARNING]
+> Lucide Lab is moved to the main repo: see https://github.com/lucide-icons/lucide
 
 Lucide Lab is a project with icons that are nicely designed but have unknown use cases.
 These icons are released in this package to "explore" the use cases of these icons.
