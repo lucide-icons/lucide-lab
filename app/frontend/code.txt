@@ -1,0 +1,93 @@
+# Vanilla
+<script>
+import { createIcons } from 'lucide';
+import { atSignCircle } from '@lucide/lab';
+
+createIcons({
+  icons: {
+    atSignCircle
+  }
+});
+</script>
+
+<i data-lucide="at-sign-circle"></i>  
+
+# React
+import { Icon } from 'lucide-react';
+import { atSignCircle } from '@lucide/lab';
+
+const App = () => {
+  return (
+    <Icon iconNode={atSignCircle} />
+  );
+};
+
+export default App;
+
+# Vue
+<script setup>
+import { Icon } from 'lucide-vue-next';
+import { atSignCircle } from '@lucide/lab';
+</script>
+
+<template>
+  <Icon :iconNode="atSignCircle" />
+</template>
+
+# Angular
+// app.module.ts
+import { LucideAngularModule } from 'lucide-angular';
+import { atSignCircle } from '@lucide/lab';
+
+@NgModule({
+  imports: [
+    LucideAngularModule.pick({ AtSignCircle: atSignCircle })
+  ],
+})
+
+// app.component.html
+<lucide-icon name="atSignCircle"></lucide-icon>
+
+# Svelte
+<script>
+import { Icon } from 'lucide-svelte';
+import { atSignCircle } from '@lucide/lab';
+</script>
+
+<Icon iconNode={atSignCircle} />
+
+# Preact
+import { Icon } from 'lucide-preact';
+import { atSignCircle } from '@lucide/lab';
+
+const App = () => {
+  return (
+    <Icon iconNode={atSignCircle} />
+  );
+};
+
+export default App;
+
+# Solid
+import { Icon } from 'lucide-solid';
+import { atSignCircle } from '@lucide/lab';
+
+const App = () => {
+  return (
+    <Icon iconNode={atSignCircle} />
+  );
+};
+
+export default App;
+
+# React Native
+import { Icon } from 'lucide-react-native';
+import { atSignCircle } from '@lucide/lab';
+
+const App = () => {
+  return (
+    <Icon iconNode={atSignCircle} />
+  );
+};
+
+export default App;

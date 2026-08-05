@@ -1,14 +1,30 @@
 {
   "private": true,
   "scripts": {
-    "build": "pnpm run /^prebuild:.*/ && nitro build",
-    "dev": "pnpm run /^prebuild:.*/ && nitro dev",
+    "build": "pnpm run /^prebuild:.*/ && vite build && nitro build",
+    "dev": "pnpm run /^prebuild:.*/ && vite build && nitro dev",
+    "frontend:build": "vite build",
+    "frontend:dev": "vite",
     "prepare": "nitro prepare",
     "preview": "node .output/server/index.mjs",
     "prebuild:writeIconNodes": "bun ./scripts/writeIconNodes.ts",
-    "prebuild:writeIconMetaIndex": "bun ./scripts/writeIconMetaIndex.ts"
+    "prebuild:writeIconMetaIndex": "bun ./scripts/writeIconMetaIndex.ts",
+    "vercel-build": "pnpm run build"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "framer-motion": "^12.34.3",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.5.0",
+    "lucide-react": "latest"
   },
   "devDependencies": {
-    "nitropack": "latest"
+    "nitropack": "latest",
+    "vite": "^7.3.1",
+    "@vitejs/plugin-react": "^5.1.4",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
   }
 }
